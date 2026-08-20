@@ -18,7 +18,8 @@ export const LandingNav = () => {
   return (
     <nav className={cn(
       'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-      scrolled ? 'bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-sm' : 'bg-transparent'
+      'bg-white/95 backdrop-blur-xl border-b border-slate-200/80',
+      scrolled ? 'shadow-sm' : ''
     )}>
       <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
         <div className="flex items-center gap-2.5">
@@ -47,7 +48,7 @@ export const LandingNav = () => {
       </div>
 
       {mobileOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-200 px-6 py-4 space-y-3">
+        <div className="md:hidden bg-white/98 backdrop-blur-xl border-t border-slate-200 px-6 py-4 space-y-3">
           <a href="#features" className="block text-sm font-medium text-slate-600 py-2">Features</a>
           <Link to="/pricing" className="block text-sm font-medium text-slate-600 py-2">Pricing</Link>
           <a href="#how-it-works" className="block text-sm font-medium text-slate-600 py-2">How It Works</a>
